@@ -73,6 +73,37 @@ function katakati(time, current){
  * Calculeter Start
  */
 
+ let cal_data = [];
+
+ let valget = (val) => {
+
+    cal_data.push(val);
+
+    document.querySelector('.top_display').innerHTML =  cal_data.join('');
+    document.querySelector('.main_display').innerHTML =  0;
+
+ };
+
+ let finalres = () =>{
+
+    let cal_string = cal_data.join('');
+    document.querySelector('.main_display').innerHTML =  eval(cal_string);
+
+ };
+
+ let allclear = () => {
+    cal_data = [];
+    document.querySelector('.top_display').innerHTML =  0;
+    document.querySelector('.main_display').innerHTML =  '';
+
+ };
+
+ let back = () => {
+
+    cal_data.pop();
+    document.querySelector('.top_display').innerHTML =  cal_data.join('');
+
+ };
 
 
 /**

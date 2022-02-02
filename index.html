@@ -47,28 +47,28 @@
       <!-- Calcxulater start -->
       <div class="calculeter shadow">
         <div class="display">
-          <div class="top_display">12</div>
-          <div class="main_display">0</div>
+          <div class="top_display">0</div>
+          <div class="main_display"></div>
         </div>
         <div class="buttons">
-          <button style="width: 50%;">AC</button>
-          <button style="width: 50%;">CE</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>/</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>*</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>-</button>
-          <button>0</button>
-          <button>.</button>
-          <button>=</button>
-          <button>+</button>
+          <button style="width: 50%;" onclick="allclear()">AC</button>
+          <button style="width: 50%;" onclick="back()">CE</button>
+          <button onclick="valget(7)">7</button>
+          <button onclick="valget(8)">8</button>
+          <button onclick="valget(9)">9</button>
+          <button onclick="valget('/')">/</button>
+          <button onclick="valget(4)">4</button>
+          <button onclick="valget(5)">5</button>
+          <button onclick="valget(6)">6</button>
+          <button onclick="valget('*')">*</button>
+          <button onclick="valget(1)">1</button>
+          <button onclick="valget(2)">2</button>
+          <button onclick="valget(3)">3</button>
+          <button onclick="valget('-')">-</button>
+          <button onclick="valget(0)">0</button>
+          <button onclick="valget('.')">.</button>
+          <button onclick="finalres()">=</button>
+          <button onclick="valget('+')">+</button>
 
         </div>
       </div>
